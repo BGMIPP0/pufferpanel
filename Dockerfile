@@ -55,7 +55,6 @@ RUN mkdir -p /etc/pufferpanel && \
     mkdir -p /var/log/pufferpanel && \
     addgroup --system -g 1000 pufferpanel && \
     adduser -D -H --home /var/lib/pufferpanel --ingroup pufferpanel -u 1000 pufferpanel && \
-    sudo pufferpanel user add --email ahm@gmail.com --name AHMGAMING --password Ahm10000 --admin && \
     chown -R pufferpanel:pufferpanel /etc/pufferpanel /var/lib/pufferpanel /var/log/pufferpanel
 
 ENV GIN_MODE=release \
